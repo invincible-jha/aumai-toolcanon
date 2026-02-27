@@ -5,8 +5,8 @@ from __future__ import annotations
 from typing import Any
 
 from aumai_toolcanon.models import (
-    CanonicalTool,
     CanonicalizationResult,
+    CanonicalTool,
     SourceFormat,
     ToolCapability,
 )

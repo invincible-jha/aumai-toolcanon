@@ -38,7 +38,9 @@ class MCPParser:
 
     def can_parse(self, tool_def: dict[str, Any]) -> bool:
         """Return True if this dict looks like an MCP tool definition."""
-        return ("inputSchema" in tool_def or "input_schema" in tool_def) and "name" in tool_def
+        return (
+            "inputSchema" in tool_def or "input_schema" in tool_def
+        ) and "name" in tool_def
 
 
 __all__ = ["MCPParser"]

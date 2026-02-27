@@ -1,8 +1,8 @@
 """aumai-toolcanon: Normalize tool definitions to the AumAI Tool Canonical IR."""
 
 from aumai_toolcanon.models import (
-    CanonicalTool,
     CanonicalizationResult,
+    CanonicalTool,
     SourceFormat,
     ToolCapability,
     ToolSecurity,

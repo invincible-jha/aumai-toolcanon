@@ -83,7 +83,11 @@ class LangChainParser:
         return (
             "args_schema" in tool_def
             or "schema" in tool_def
-            or ("name" in tool_def and "description" in tool_def and "properties" in tool_def)
+            or (
+                "name" in tool_def
+                and "description" in tool_def
+                and "properties" in tool_def
+            )
         )
 
 

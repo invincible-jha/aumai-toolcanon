@@ -53,7 +53,9 @@ def _infer_capabilities(name: str, description: str) -> ToolCapability:
     """Heuristically infer tool capabilities from name and description text."""
     text = (name + " " + description).lower()
 
-    side_effect_verbs = {"write", "create", "delete", "update", "post", "send", "save", "remove"}
+    side_effect_verbs = {
+        "write", "create", "delete", "update", "post", "send", "save", "remove"
+    }
     read_verbs = {"read", "get", "fetch", "list", "search", "query", "find"}
 
     has_side_effects = any(v in text for v in side_effect_verbs)

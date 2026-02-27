@@ -11,7 +11,8 @@ def emit_openai(tool: CanonicalTool) -> dict[str, Any]:
     """Emit a CanonicalTool as an OpenAI tool definition.
 
     Output:
-    ``{"type": "function", "function": {"name": ..., "description": ..., "parameters": {...}}}``
+    ``{"type": "function", "function": {"name": ..., "description": ...,
+    "parameters": {...}}}``
     """
     parameters = tool.inputs or {"type": "object", "properties": {}}
     if "type" not in parameters:
