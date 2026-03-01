@@ -25,6 +25,11 @@ dependencies = [
     "click>=8.0",
     "jsonschema>=4.0",
     "pyyaml>=6.0",
+    # Foundation libraries
+    "aumai-store>=0.1.0",
+    "aumai-async-core>=0.1.0",
+    "aumai-llm-core>=0.1.0",
+    "aumai-integration>=0.1.0",
 ]
 
 [project.optional-dependencies]
